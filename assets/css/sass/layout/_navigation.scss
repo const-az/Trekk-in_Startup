@@ -1,0 +1,94 @@
+.navigation{
+  position: relative;
+  background-color: $white;
+  padding: $x-small 20px;
+
+    &__logo{
+      position: absolute;
+      width: $xxxxx-large;
+      height: $xxxxx-large;
+      background-image: url(../img/Logo.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__menu{
+      text-align: right;
+      padding-top: $xx-small;
+
+      label{
+        font-size: $xx-large;
+        padding: $xx-small;
+      }
+
+      #menu__burger{
+        display: none;
+      }
+
+      .menu__items {
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        transition: height 1s;
+
+        .menu__list{
+          list-style-type: none;
+
+          .list__item {
+
+              .item__link {
+              display: block;
+              padding: $xx-small;
+              font-family: $raleway;
+              color: $raising-black;
+              text-decoration: none;
+              transition: all .2s;
+
+              &:hover {
+                color: $nickel;
+              }
+            }
+          }
+        }
+
+        .menu__buttons{
+          margin-top: $xx-small;
+        }
+    }
+
+    input:checked ~ .menu__items {
+      height: 160px;
+    }
+
+  }
+}
+
+// MEDIA QUERYS
+@media only screen and (min-width: 768px) {
+ .navigation{
+   padding: $x-small 70px;
+ }
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation__menu {
+    label {
+      display: none;
+    }
+
+    .menu__items{
+      padding: $xx-small;
+      overflow: visible;
+      display: flex;
+      justify-content: space-between;
+
+      .menu__list{
+        display: flex;
+        margin-left: $xxxxx-large;
+      }
+      .menu__buttons{
+        margin-top: 0;
+      }
+    }
+  }
+}

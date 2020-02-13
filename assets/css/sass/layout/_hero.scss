@@ -1,0 +1,138 @@
+main{
+  position: relative;
+}
+
+// INTRODUCTION
+.hero{
+  padding-top: $medium;
+  position: relative;
+  margin-bottom: $xxxxx-large;
+
+  img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__text{
+    margin: 0 20px;
+    margin-top: $xxx-large;
+  }
+
+// GRAPHIC
+  &__progress{
+    width: 100%;
+    margin-bottom: $xxxxx-large;
+
+    .progress__content{
+      margin-top: $xxxxx-large;
+      padding: 0 20px;
+
+      .content__margin{
+        display: none;
+      }
+
+      .content__graph{
+        animation: opacity 3s ease-in;
+        width: 100%;
+      }
+      .content__text{
+        margin-top: $xxxxx-large;
+      }
+    }
+  }
+
+// PLANS
+  .prices__img{
+    width: 100%;
+  }
+
+  &__prices{
+    margin-top: -5px;
+    background-color: $onyx;
+    padding-top: $medium;
+
+    .prices__title{
+      color: $white;
+      margin-bottom: $xxx-large;
+    }
+    .prices__cards{
+      padding: 0 20px 100px;
+      .card__margin{
+        display: none;
+      }
+    }
+  }
+}
+
+// MEDIA QUERYS
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .hero{
+    margin-bottom: 0;
+
+    &__text{
+      position: absolute;
+      width: 50%;
+      margin: 0 70px;
+      margin-top: $xxxxxx-large;
+    }
+
+    &__progress{
+      .progress__content{
+        padding: 0 70px;
+        .content__text{
+          margin-left: 20px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    &__prices{
+      .prices__cards{
+        padding: 0 70px 100px;
+        grid-column-gap: $xxxxx-large;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  .hero{
+    &__text{
+      width: 30%;
+    }
+
+    &__progress{
+      .progress__content{
+        .content__margin{
+          display: block;
+        }
+        .content__text{
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &__prices{
+      .prices__cards{
+        .card__margin{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero{
+    &__progress{
+      .progress__content{
+        .content__text{
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+h1, h2, h3, h4{
+  font-family: $raleway;
+}
+
+h1{
+  font-size: $xxxxx-large;
+}
+
+h2{
+  font-size: $xx-large;
+  text-align: center;
+}
+
+h3{
+  font-size: $x-large;
+}
+
+h4{
+  font-size: $large;
+}
+
+p{
+  font-family: $open-sans;
+  font-size: $medium;
+  color: $onyx;
+  line-height: $x-large;
+  margin-top: $x-small;
+}

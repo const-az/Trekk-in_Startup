@@ -1,0 +1,32 @@
+button{
+  font-family: $raleway;
+  font-weight: $regular;
+  font-size: $medium;
+  padding: $xx-small $x-small;
+  transition: all .2s;
+  border-style: none;
+  margin: 0 $xx-small;
+}
+
+.log-in{
+  background-color: white;
+
+  &:hover{
+    color: $ball-blue;
+  }
+}
+
+.sign-in{
+  background-color: $ball-blue;
+  color: $white;
+
+  &:hover{
+    background-color: $middle-blue;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .log-in{
+    background-color: $platinum;
+  }
+}

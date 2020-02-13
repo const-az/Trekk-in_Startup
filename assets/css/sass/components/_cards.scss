@@ -1,0 +1,71 @@
+.card{
+  padding: $x-large;
+  background-color: $white;
+  border: solid 1px $nickel;
+  width: 280px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: $xxx-large;
+
+  &:hover{
+    box-shadow: 2px 3px 25px $raising-black;
+  }
+
+  &__line{
+    border-style: solid;
+    border-width: .5px;
+  }
+
+  &__plan{
+    font-weight: $regular;
+  }
+
+  &__price{
+    font-size: $x-large;
+    font-weight: $bold;
+    text-align: left;
+    margin-bottom: $x-small;
+  }
+
+  &__list{
+    margin: $x-small 0;
+    font-family: $open-sans;
+    font-size: $x-small;
+    list-style-position: inside;
+    line-height: $x-large;
+    min-height: 180px;
+  }
+
+  .btn-all{
+    width: 100%;
+    margin: $x-small 0 0;
+    padding: $x-small;
+  }
+}
+
+// MEDIA QUERYS
+@media only screen and (min-width: 768px) {
+  .card{
+    margin-bottom: 0;
+    width: 320px;
+
+    &__list{
+      font-size: $small;
+    }
+
+    &__price{
+      font-size: $xx-large;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card{
+    width: 350px;
+  }
+}

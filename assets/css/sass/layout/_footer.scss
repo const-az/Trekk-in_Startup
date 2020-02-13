@@ -1,0 +1,34 @@
+.footer{
+  background-color: $raising-black;
+  color: $platinum;
+  font-family:$raleway;
+  text-align: center;
+  padding: 30px 20px;
+
+  &__list{
+    list-style-type: none;
+    font-size: $small;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__paragraph{
+    color: $platinum;
+    font-size: $small;
+    line-height: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer{
+    text-align: right;
+    padding: 30px 70px;
+    &__list{
+      font-size: $medium;
+      margin-top: $x-small;
+    }
+    &__paragraph{
+      font-size: $medium;
+    }
+  }
+}

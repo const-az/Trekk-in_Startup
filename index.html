@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Startup Treek-in</title>
+  <!--Font Awesome 5.6.3-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"crossorigin="anonymous">
+  <!-- Google Fonts: Open Sans (400) + Raleway (400+700) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navigation">
+    <div class="navigation__logo"></div>
+      <div class="navigation__menu">
+        <input type="checkbox" id="menu__burger">
+        <label for="menu__burger"><i class="fas fa-bars"></i></label>
+        <div class="menu__items">
+          <ul class="menu__list">
+            <li class="list__item"><a class="item__link" href="#about">Acerca de</a></li>
+            <li class="list__item"><a class="item__link" href="#progress">Características</a></li>
+            <li class="list__item"><a class="item__link" href="#prices">Precios</a></li>
+          </ul>
+          <div class="menu__buttons">
+            <button type="button" class="log-in">Iniciar sesión</button>
+            <button type="button" class="sign-in">Regístrate</button>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <!-- contenido -->
+  <main>
+    <!-- INTRODUCTION -->
+    <section class="hero" id="about">
+      <div class="hero__text">
+        <h1>Haz Trekking sin parar</h1>
+        <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
+      </div>
+
+      <img src="assets/img/bg-hero.svg"alt="Fondo montaña" class="col-xs-12">
+    </section>
+    <!-- GRAPHIC -->
+    <section class="row" id="progress">
+      <div class="hero__progress col-xs-12 col-lg-12">
+        <h2 class="progress__title">Características</h2>
+        <div class="progress__content row">
+          <div class="content__margin col-lg-1 col-xl-2"></div>
+          <img class="content__graph col-xs-12 col-md-6 col-lg-5 col-xl-4" src="assets/img/bar-graph.svg"alt="Gráfico progreso">
+          <div class="content__text col-xs-12 col-md-6 col-lg-5 col-xl-4">
+            <h3>Estadísticas de tu progreso</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="content__margin col-lg-1 col-xl-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- PRICES -->
+    <img class="prices__img" src="assets/img/bg-price.svg" alt="" id="prices">
+    <section class="row">
+      <div class="hero__prices col-xs-12 col-lg-12">
+        <h2 class="prices__title">Precios</h2>
+        <div class="prices__cards row">
+          <div class="col-lg-1 col-xl-2 card__margin"></div>
+          <!-- card uno -->
+          <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <h4 class="card__plan">Trekk-in Free</h3>
+            <h2 class="card__price">$ 0 /mes</h1>
+            <hr class="card__line">
+            <ul class="card__list">
+              <li>Ver mapas creados por usuarios</li>
+              <li>Conectar con otros usuarios</li>
+            </ul>
+            <hr class="card__line">
+            <button type="button" class="sign-in btn-all">Obtén Free</button>
+          </div>
+          <!-- card dos -->
+          <div class="card col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <h4 class="card__plan">Trekk-in Premium</h3>
+            <h2 class="card__price">$ 3.500 /mes</h1>
+            <hr class="card__line">
+            <ul class="card__list">
+              <li>Ver mapas creados por usuarios</li>
+              <li>Conectar con otros usuarios</li>
+              <li>Definir mejores rutas</li>
+              <li>Mapas offline</li>
+              <li>Integración con otras aplicaciones</li>
+            </ul>
+            <hr class="card__line">
+            <button type="button" class="sign-in btn-all">Obtén Premium</button>
+          </div>
+          <div class="col-lg-1 col-xl-2 card__margin"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer row">
+    <ul class="footer__list col-xs-12 col-md-6 col-lg-4">
+      <li>Legal</li>
+      <li>Cookies</li>
+      <li>Sobre anuncios</li>
+    </ul>
+
+    <p class="footer__paragraph col-xs-12 col-md-6 col-lg-8">© 2018 Trekk-in SPA.</p>
+  </footer>
+</body>
+</html>
